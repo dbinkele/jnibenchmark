@@ -9,7 +9,7 @@ extern "C" {
 #endif
 /*
  * Class:     com_baeldung_jni_HelloWorldJNI
- * Method:    sayHello
+ * Method:    passNumber
  * Signature: ()V
  */
 JNIEXPORT jstring JNICALL Java_com_baeldung_jni_HelloWorldJNI_sayHello
