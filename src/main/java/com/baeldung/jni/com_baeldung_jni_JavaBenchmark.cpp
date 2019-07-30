@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-int numbers[100] = {[0 ... 99] = 5};
+int numbers[1000000] = {[0 ... 999999] = 5};
 int pos = 0;
 /*
  * Class:     com_baeldung_jni_HelloWorldJNI
@@ -40,7 +40,7 @@ JNIEXPORT jint JNICALL Java_com_baeldung_jni_JavaBenchmark_sumarray
           jint result = 0;
           jint *body = env->GetIntArrayElements(numArray, 0);
           for(int i = 0; i < pos; i++){
-            result = body[i];
+            result += body[i];
           }
           return result;
   }
